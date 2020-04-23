@@ -1,0 +1,124 @@
+$font-family: Raleway;
+
+body {
+  margin: 0;
+}
+
+.slider {
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  min-height: 1024px;
+  background-image: url(../img/bg_photo_11949.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-wrap {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows-left {
+  background-color: transparent;
+  border: none;
+}
+
+.arrows-right {
+  background-color: transparent;
+  border: none;
+}
+
+.slider-slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-slogan-top {
+  font-family: $font-family;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
+}
+
+.slider-slogan-middle {
+  font-family: $font-family;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-align: center;
+}
+
+.slider-slogan-bottom {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 590px;
+}
+
+.slider-button {
+  width: 170px;
+  height: 53px;
+  background-color: #998675;
+  border-radius: 3.0px;
+  outline: none;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
+.header {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding-left: 73px;
+  &:before {
+    position: absolute;
+    content: url(../img/logo.svg);
+    top: -7px;
+    left: 0;
+    display: block;
+  }
+}
+
+.header-nav ul {
+}
+
+.header-nav li {
+  list-style: none;
+  float: left;
+  padding-left: 30px;
+
+}
