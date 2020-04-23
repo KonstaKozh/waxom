@@ -4,12 +4,72 @@ body {
   margin: 0;
 }
 
+.header {
+  width: 100%;
+  padding-top: 40px;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  color: white;
+  transform: translateX(-50%);
+}
+
+.header-wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 2;
+}
+
+.header-nav {
+  padding: 0;
+}
+
+.header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.header-nav li {
+  list-style: none;
+  float: left;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #ffffff;
+  padding-right: 30px;
+}
+
+.header-wrap-a {
+  flex-basis: auto;
+}
+
+.header-wrap-a img {
+  padding-left: 30px;
+}
+
 .slider {
   color: white;
   margin: 0 auto;
   position: relative;
   min-height: 1024px;
-  background-image: url(../img/bg_photo_11949.jpg);
+  background-image: url(../img/bg_slider.png);
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
@@ -81,44 +141,14 @@ body {
   margin-top: 50px;
 }
 
-.header {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-top: 40px;
+.pagination {
   position: absolute;
-  top: 0;
-  left: 0;
+  width: 100%;
+  bottom: 40px;
+  text-align: center;
+  left: 50%;
   z-index: 1;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  transform: translateX(-50%);
 }
 
-.logo {
-  font-size: 34px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  color: #ffffff;
-  text-decoration: none;
-  position: relative;
-  padding-left: 73px;
-  &:before {
-    position: absolute;
-    content: url(../img/logo.svg);
-    top: -7px;
-    left: 0;
-    display: block;
-  }
-}
-
-.header-nav ul {
-}
-
-.header-nav li {
-  list-style: none;
-  float: left;
-  padding-left: 30px;
-
-}
