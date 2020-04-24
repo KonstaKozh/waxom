@@ -47,13 +47,22 @@ body {
 
 .header-nav li {
   list-style: none;
-  float: left;
-  font-family: Montserrat;
+  padding-right: 30px;
+}
+
+.header-nav a {
+  font-family: Montserrat, serif;
   font-size: 14px;
   line-height: 1.2;
   font-weight: 300;
   color: #ffffff;
-  padding-right: 30px;
+  text-decoration: none;
+  &:hover {
+    color: #c7b299;
+  }
+  &:active {
+    color: #c7b299;
+  }
 }
 
 .header-wrap-a {
@@ -86,12 +95,7 @@ body {
   align-items: center;
 }
 
-.arrows-left {
-  background-color: transparent;
-  border: none;
-}
-
-.arrows-right {
+.slider-arrow {
   background-color: transparent;
   border: none;
 }
@@ -119,7 +123,7 @@ body {
 }
 
 .slider-slogan-bottom {
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
@@ -131,7 +135,8 @@ body {
   width: 170px;
   height: 53px;
   background-color: #998675;
-  border-radius: 3.0px;
+  border-radius: 5px;
+  border: none;
   outline: none;
   font-size: 14px;
   line-height: 23px;
@@ -139,6 +144,10 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 50px;
+  &:hover {
+    box-shadow: 0 2px 5px 1px rgba(255, 255, 255, 0.35);
+    background-color: rgba(204, 185, 166, 0.54);
+  }
 }
 
 .pagination {
@@ -152,3 +161,15 @@ body {
   transform: translateX(-50%);
 }
 
+.circle {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 8px;
+  &:hover {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+}
