@@ -41,7 +41,7 @@ body {
 }
 
 .logo-txt {
-  font-family: Raleway;
+  font-family: Raleway, serif;
   font-size: 34px;
   line-height: 1.2;
   font-weight: 400;
@@ -75,15 +75,78 @@ body {
   color: #c7b299;
 }
 .header-nav a:active {
-  color: #c7b299;
+  color: #fff;
 }
 
-.header-wrap-a {
+.header-service {
+  display: flex;
+  align-items: center;
   flex-basis: auto;
 }
 
-.header-wrap-a img {
-  padding-left: 30px;
+.header-service-button {
+  background-color: transparent;
+  fill: white;
+  border: none;
+  outline: none;
+}
+.header-service-button:hover {
+  fill: #c7b299;
+}
+.header-service-button:active {
+  fill: #fff;
+}
+
+.header-service-button img:hover {
+  color: #c7b299;
+}
+
+form {
+  position: relative;
+  top: 50%;
+  transform: translateX(0%);
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  box-sizing: border-box;
+  padding: 5px;
+  fill: white;
+}
+form:hover {
+  width: 200px;
+  fill: #c7b299;
+  cursor: pointer;
+}
+form:hover input {
+  fill: #c7b299;
+  display: block;
+}
+
+input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  padding: 0 20px;
+}
+
+.search-icon {
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
 }
 
 .slider {
@@ -109,8 +172,18 @@ body {
 }
 
 .slider-arrow {
+  outline: 0;
+  border: 0;
   background-color: transparent;
-  border: none;
+  fill: white;
+}
+.slider-arrow:hover {
+  fill: #c7b299;
+  cursor: pointer;
+}
+.slider-arrow:active {
+  fill: white;
+  cursor: pointer;
 }
 
 .slider-slogan {
