@@ -105,76 +105,53 @@ body {
 
 form{
     position: relative;
-    top: 50%;
-    //left: 100%;
-    transform: translateX(0%);
-    //transition: all 1s;
     width: 50px;
     height: 50px;
     background: transparent;
     box-sizing: border-box;
-    //border-radius: 5px;
-    //border: 5px solid white;
-    padding: 5px;
     fill: white;
     &:hover{
-      width: 200px;
-      fill: #c7b299;
       cursor: pointer;
     }
     &:hover input {
-      fill: #c7b299;
       display: block;
     }
-    //&:hover .fa{
-    //  background: white;
-    //  color: black;
+    //&:hover .search-icon {
+    //  fill: #c7b299;
+    //  position: absolute;
+    //  top: 0;
+    //  right: 10px;
     //}
 }
 
 input{
+    width: 200px;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 42.5px;
+    height: 50px;
     line-height: 30px;
     outline: 0;
     border: 0;
     display: none;
     font-size: 1em;
-    //border-radius: 5px;
     padding: 0 20px;
 }
 
-//.fa{
-//    box-sizing: border-box;
-//    padding: 10px;
-//    width: 42.5px;
-//    height: 42.5px;
-//    position: absolute;
-//    top: 0;
-//    right: 0;
-//    //border-radius: 50%;
-//    color: white;
-//    text-align: center;
-//    font-size: 1.2em;
-//    //transition: all 1s;
-//}
 
 .search-icon{
   box-sizing: border-box;
-  padding: 10px;
-  width: 42.5px;
-  height: 42.5px;
+  height: 46px;
   position: absolute;
   top: 0;
-  right: 0;
-  //border-radius: 50%;
-  color: white;
-  text-align: center;
-  font-size: 1.2em;
-  //transition: all 1s;
+  right: 10px;
+  fill: white;
+  &:hover {
+    fill: #c7b299;
+    position: absolute;
+    top: 0;
+    left: 150px;
+  }
 }
 
 .slider {
@@ -268,11 +245,13 @@ input{
     position: absolute;
     width: 100%;
     bottom: 40px;
-    text-align: center;
     left: 50%;
     z-index: 1;
     color: white;
     transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -285,6 +264,6 @@ input{
     margin: 8px;
     &:hover {
       background-color: transparent;
-      border: 2px solid white;
+      box-shadow: 0px 0px 0px 2px white;
     }
 }
