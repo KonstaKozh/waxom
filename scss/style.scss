@@ -23,16 +23,31 @@ body {
 }
 
 .logo {
-  font-size: 34px;
-  line-height: 1.2;
-  font-weight: 400;
-  letter-spacing: -0.04em;
-  color: #ffffff;
-  text-decoration: none;
+  width: 181px;
   position: relative;
   display: flex;
   align-items: center;
   flex-grow: 2;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #c7b299;
+  }
+  &:active {
+    color: #fff;
+  }
+}
+
+.logo-svg {
+  fill: currentColor;
+}
+
+.logo-txt {
+  font-family: Raleway;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.04em;
 }
 
 .header-nav {
