@@ -4,6 +4,14 @@ body {
   margin: 0;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1920px;
+  padding: 0 0;
+  display: flex;
+  justify-content: center;
+}
+
 .header {
   width: 100%;
   padding-top: 40px;
@@ -155,6 +163,7 @@ input{
 }
 
 .slider {
+    width: 100%;
     color: white;
     margin: 0 auto;
     position: relative;
@@ -266,4 +275,12 @@ input{
       background-color: transparent;
       box-shadow: 0px 0px 0px 2px white;
     }
+}
+
+.services {
+  display: flex;
+}
+
+.service-item {
+  width: 266px;
 }
