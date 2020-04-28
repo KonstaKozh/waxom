@@ -107,33 +107,41 @@ body {
   color: #c7b299;
 }
 
-form {
+.search-form {
   position: relative;
   width: 50px;
   height: 50px;
   background: transparent;
   box-sizing: border-box;
   fill: white;
+  transition: all 200ms;
 }
-form:hover {
+.search-form:hover {
   cursor: pointer;
 }
-form:hover input {
-  display: block;
+.search-form:hover .search-input {
+  display: inline-block;
+  width: 250px;
+}
+.search-form:hover .search-icon {
+  position: absolute;
+  right: -180px;
+  fill: #c7b299;
 }
 
-input {
-  width: 200px;
+.search-input {
   position: absolute;
   top: 0;
   left: 0;
-  height: 50px;
+  width: 100%;
+  height: 45px;
   line-height: 30px;
   outline: 0;
   border: 0;
+  color: #c7b299;
   display: none;
   font-size: 1em;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .search-icon {
@@ -143,12 +151,6 @@ input {
   top: 0;
   right: 10px;
   fill: white;
-}
-.search-icon:hover {
-  fill: #c7b299;
-  position: absolute;
-  top: 0;
-  left: 150px;
 }
 
 .slider {
@@ -227,6 +229,7 @@ input {
   border-radius: 5px;
   border: none;
   outline: none;
+  font-family: Raleway, serif;
   font-size: 14px;
   line-height: 23px;
   font-weight: 800;

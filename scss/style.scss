@@ -36,9 +36,11 @@ body {
   flex-grow: 2;
   color: #fff;
   text-decoration: none;
+
   &:hover {
     color: #c7b299;
   }
+
   &:active {
     color: #fff;
   }
@@ -78,9 +80,11 @@ body {
   font-weight: 300;
   color: #ffffff;
   text-decoration: none;
+
   &:hover {
     color: #c7b299;
   }
+
   &:active {
     color: #fff;
   }
@@ -97,9 +101,11 @@ body {
   fill: white;
   border: none;
   outline: none;
+
   &:hover {
     fill: #c7b299;
   }
+
   &:active {
     fill: #fff;
   }
@@ -109,78 +115,73 @@ body {
   color: #c7b299;
 }
 
-form{
-    position: relative;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    box-sizing: border-box;
-    fill: white;
-    &:hover{
-      cursor: pointer;
-    }
-    &:hover input {
-      display: block;
-    }
-    //&:hover .search-icon {
-    //  fill: #c7b299;
-    //  position: absolute;
-    //  top: 0;
-    //  right: 10px;
-    //}
-}
-
-input{
-    width: 200px;
+.search-form {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: transparent;
+  box-sizing: border-box;
+  fill: white;
+  transition: all 200ms;
+  &:hover {
+    cursor: pointer;
+  }
+  &:hover .search-input{
+    display: inline-block;
+    width: 250px;
+  }
+  &:hover .search-icon{
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 50px;
-    line-height: 30px;
-    outline: 0;
-    border: 0;
-    display: none;
-    font-size: 1em;
-    padding: 0 20px;
+    right: -180px;
+    fill: #c7b299;
+  }
 }
 
+.search-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  color: #c7b299;
+  display: none;
+  font-size: 1em;
+  padding: 0 10px;
+}
 
-.search-icon{
+.search-icon {
   box-sizing: border-box;
   height: 46px;
   position: absolute;
   top: 0;
   right: 10px;
   fill: white;
-  &:hover {
-    fill: #c7b299;
-    position: absolute;
-    top: 0;
-    left: 150px;
-  }
 }
 
 .slider {
-    width: 100%;
-    color: white;
-    margin: 0 auto;
-    position: relative;
-    min-height: 1024px;
-    background-image: url(../img/bg_slider.png);
-    background-size: cover;
-    background-position: center;
-    box-sizing: border-box;
-    padding: 0 150px;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  position: relative;
+  min-height: 1024px;
+  background-image: url(../img/bg_slider.png);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
 }
 
 .slider-wrap {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .slider-arrow {
@@ -188,10 +189,12 @@ input{
   border: 0;
   background-color: transparent;
   fill: white;
+
   &:hover {
     fill: #c7b299;
     cursor: pointer;
   }
+
   &:active {
     fill: white;
     cursor: pointer;
@@ -199,80 +202,83 @@ input{
 }
 
 .slider-slogan {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slider-slogan-top {
-    font-family: $font-family;
-    font-size: 36px;
-    line-height: 1.2;
-    font-weight: 500;
-    text-align: center;
+  font-family: $font-family;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 500;
+  text-align: center;
 }
 
 .slider-slogan-middle {
-    font-family: $font-family;
-    font-size: 52px;
-    line-height: 1.2;
-    font-weight: 800;
-    text-align: center;
+  font-family: $font-family;
+  font-size: 52px;
+  line-height: 1.2;
+  font-weight: 800;
+  text-align: center;
 }
 
 .slider-slogan-bottom {
-    font-family: Montserrat, serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 300;
-    text-align: center;
-    max-width: 590px;
+  font-family: Montserrat, serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  max-width: 590px;
 }
 
 .slider-button {
-    width: 170px;
-    height: 53px;
-    background-color: #998675;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    font-size: 14px;
-    line-height: 23px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #ffffff;
-    margin-top: 50px;
-    &:hover {
-      box-shadow: 0 2px 5px 1px rgba(255, 255, 255, 0.35);
-      background-color: rgba(204, 185, 166, 0.54);
-    }
+  width: 170px;
+  height: 53px;
+  background-color: #998675;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 50px;
+
+  &:hover {
+    box-shadow: 0 2px 5px 1px rgba(255, 255, 255, 0.35);
+    background-color: rgba(204, 185, 166, 0.54);
+  }
 }
 
 .pagination {
-    position: absolute;
-    width: 100%;
-    bottom: 40px;
-    left: 50%;
-    z-index: 1;
-    color: white;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  left: 50%;
+  z-index: 1;
+  color: white;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .circle {
-    display: inline-block;
-    width: 11px;
-    height: 11px;
-    border-radius: 50%;
-    background-color: white;
-    margin: 8px;
-    &:hover {
-      background-color: transparent;
-      box-shadow: 0 0 0 2px white;
-    }
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 8px;
+
+  &:hover {
+    background-color: transparent;
+    box-shadow: 0 0 0 2px white;
+  }
 }
 
 .services {
@@ -289,11 +295,13 @@ input{
   flex-wrap: wrap;
   //flex-direction: column;
   justify-content: center;
+
   & svg {
     display: block;
     fill: #555555;
     margin: 0 20px;
   }
+
   & h2 {
     display: block;
     margin: 0 auto;
@@ -304,6 +312,7 @@ input{
     font-weight: 600;
     color: #555555;
   }
+
   & p {
     margin: 0 auto;
     padding-top: 20px;
@@ -314,6 +323,7 @@ input{
     font-weight: 300;
     color: #8c8c8c;
   }
+
   &:after {
     margin: 20px 0 0 0;
     content: "";
@@ -322,12 +332,15 @@ input{
     height: 3px;
     background-color: #f1eee9;
   }
+
   &:hover svg {
     fill: #c7b299;
   }
+
   &:hover h2 {
     color: #c7b299;
   }
+
   &:hover:after {
     background-color: #c7b299;
   }
