@@ -4,10 +4,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1920px;
+  max-width: 1920px;
   padding: 0 0;
-  display: flex;
-  justify-content: center;
 }
 
 .header {
@@ -17,7 +15,7 @@ body {
   left: 50%;
   z-index: 1;
   color: white;
-  transform: translateX(-50%);
+  margin-left: -50%;
 }
 
 .header-wrap {
@@ -49,7 +47,7 @@ body {
 }
 
 .logo-txt {
-  font-family: Raleway, serif;
+  font-family: Raleway, serif, serif;
   font-size: 34px;
   line-height: 1.2;
   font-weight: 400;
@@ -198,7 +196,7 @@ input {
 }
 
 .slider-slogan-top {
-  font-family: Raleway;
+  font-family: Raleway, serif;
   font-size: 36px;
   line-height: 1.2;
   font-weight: 500;
@@ -206,7 +204,7 @@ input {
 }
 
 .slider-slogan-middle {
-  font-family: Raleway;
+  font-family: Raleway, serif;
   font-size: 52px;
   line-height: 1.2;
   font-weight: 800;
@@ -264,15 +262,64 @@ input {
 }
 .circle:hover {
   background-color: transparent;
-  box-shadow: 0px 0px 0px 2px white;
+  box-shadow: 0 0 0 2px white;
 }
 
 .services {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 80px 0 80px;
   display: flex;
+  justify-content: space-between;
 }
 
 .service-item {
   width: 266px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-item svg {
+  display: block;
+  fill: #555555;
+  margin: 0 20px;
+}
+.service-item h2 {
+  display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-family: Raleway, serif;
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #555555;
+}
+.service-item p {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  font-family: Montserrat, serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.service-item:after {
+  margin: 20px 0 0 0;
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f1eee9;
+}
+.service-item:hover svg {
+  fill: #c7b299;
+}
+.service-item:hover h2 {
+  color: #c7b299;
+}
+.service-item:hover:after {
+  background-color: #c7b299;
 }
 
 /*# sourceMappingURL=style.css.map */

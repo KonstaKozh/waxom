@@ -1,4 +1,4 @@
-$font-family: Raleway;
+$font-family: Raleway, serif;
 
 body {
   margin: 0;
@@ -6,10 +6,8 @@ body {
 
 .container {
   margin: 0 auto;
-  width: 1920px;
+  max-width: 1920px;
   padding: 0 0;
-  display: flex;
-  justify-content: center;
 }
 
 .header {
@@ -19,7 +17,7 @@ body {
   left: 50%;
   z-index: 1;
   color: white;
-  transform: translateX(-50%);
+  margin-left: -50%;
 }
 
 .header-wrap {
@@ -273,14 +271,64 @@ input{
     margin: 8px;
     &:hover {
       background-color: transparent;
-      box-shadow: 0px 0px 0px 2px white;
+      box-shadow: 0 0 0 2px white;
     }
 }
 
 .services {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 80px 0 80px;
   display: flex;
+  justify-content: space-between;
 }
 
 .service-item {
   width: 266px;
+  display: flex;
+  flex-wrap: wrap;
+  //flex-direction: column;
+  justify-content: center;
+  & svg {
+    display: block;
+    fill: #555555;
+    margin: 0 20px;
+  }
+  & h2 {
+    display: block;
+    margin: 0 auto;
+    padding-top: 30px;
+    font-family: Raleway, serif;
+    font-size: 22px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+  }
+  & p {
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+    font-family: Montserrat, serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #8c8c8c;
+  }
+  &:after {
+    margin: 20px 0 0 0;
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f1eee9;
+  }
+  &:hover svg {
+    fill: #c7b299;
+  }
+  &:hover h2 {
+    color: #c7b299;
+  }
+  &:hover:after {
+    background-color: #c7b299;
+  }
 }
