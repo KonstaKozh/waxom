@@ -113,7 +113,6 @@ body {
   height: 50px;
   background: transparent;
   fill: white;
-  border: none;
 }
 .search-form:hover {
   cursor: pointer;
