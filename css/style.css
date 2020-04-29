@@ -112,13 +112,13 @@ body {
   width: 50px;
   height: 50px;
   background: transparent;
-  box-sizing: border-box;
   fill: white;
+  border: none;
 }
 .search-form:hover {
   cursor: pointer;
 }
-.search-form:focus-within .search-input {
+.search-form:focus .search-input {
   margin-left: 10px;
   display: inline-block;
   width: 250px;
@@ -136,8 +136,6 @@ body {
   width: 100%;
   height: 45px;
   line-height: 30px;
-  outline: 0;
-  border: 0;
   color: #c7b299;
   display: none;
   font-size: 1em;
