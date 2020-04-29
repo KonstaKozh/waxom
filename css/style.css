@@ -114,18 +114,18 @@ body {
   background: transparent;
   box-sizing: border-box;
   fill: white;
-  transition: all 200ms;
 }
 .search-form:hover {
   cursor: pointer;
 }
-.search-form:hover .search-input {
+.search-form:focus-within .search-input {
+  margin-left: 10px;
   display: inline-block;
   width: 250px;
 }
-.search-form:hover .search-icon {
+.search-form:focus-within .search-icon {
   position: absolute;
-  right: -180px;
+  right: -200px;
   fill: #c7b299;
 }
 
@@ -151,6 +151,9 @@ body {
   top: 0;
   right: 10px;
   fill: white;
+}
+.search-icon:hover {
+  fill: #c7b299;
 }
 
 .slider {
