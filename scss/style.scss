@@ -2,7 +2,7 @@ $font-family: Raleway, serif;
 h1 {
   padding: 0;
   margin: 0;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 30px;
   line-height: 1.2;
   font-weight: 600;
@@ -131,6 +131,9 @@ body {
   fill: white;
   &:hover {
     cursor: pointer;
+  }
+  &:focus {
+    outline: none;
   }
   &:focus .search-input{
     margin-left: 10px;
