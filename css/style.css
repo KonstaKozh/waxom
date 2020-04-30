@@ -344,6 +344,15 @@ h1 {
 .service-item:hover:after {
   background-color: #c7b299;
 }
+.service-item:active svg {
+  fill: #555555;
+}
+.service-item:active h2 {
+  color: #555555;
+}
+.service-item:active:after {
+  background-color: #555555;
+}
 
 .ideas {
   background-color: #fbfaf8;
@@ -450,19 +459,94 @@ aside p {
 }
 
 .project-wrap {
-  margin: 40px 0;
+  max-width: 1170px;
+  margin: 40px 0 10px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project-item {
   width: 370px;
   background-color: #fbfaf8;
+  position: relative;
+  margin-bottom: 30px;
+}
+.project-item img {
+  display: block;
+  width: 370px;
+  height: 240px;
+  margin: 0;
+}
+.project-item:hover span:nth-child(1) {
+  color: white;
+}
+.project-item:hover span:nth-child(2) {
+  color: #c7b299;
+}
+.project-item:hover .project-item-txt:before {
+  border-bottom: 15px solid #362f2d;
+}
+
+.project-item:hover img {
+  filter: brightness(0.5);
+}
+
+.project-item:hover .project-item-txt {
+  background-color: #362f2d;
+}
+
+.project-item:hover .button-link {
+  visibility: visible;
+}
+
+.project-item:hover .button-lupa {
+  visibility: visible;
+}
+
+.button-link {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  visibility: hidden;
+  outline: none;
+}
+.button-link svg {
+  fill: white;
+}
+.button-link:hover svg {
+  fill: #c7b299;
+}
+.button-link:active svg {
+  fill: white;
+}
+
+.button-lupa {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 30%;
+  right: 35%;
+  visibility: hidden;
+  outline: none;
+}
+.button-lupa svg {
+  fill: white;
+}
+.button-lupa:hover svg {
+  fill: #c7b299;
+}
+.button-lupa:active svg {
+  fill: white;
 }
 
 .project-item-txt {
   padding: 30px;
   position: relative;
   background-color: #fbfaf8;
+  box-sizing: border-box;
 }
 .project-item-txt span:nth-child(1) {
   display: block;
@@ -484,9 +568,9 @@ aside p {
   content: "";
   position: absolute;
   left: 20px;
-  top: -45px;
+  top: -35px;
   border: 20px solid transparent;
-  border-bottom: 20px solid #fbfaf8;
+  border-bottom: 15px solid #fbfaf8;
   display: block;
   width: 0;
   height: 0;
