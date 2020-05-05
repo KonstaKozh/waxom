@@ -641,4 +641,17 @@ aside p {
   color: #c7b299;
 }
 
+.excellent {
+  width: 100%;
+  background-color: #fbfaf8;
+  background-image: url("../img/iphone_in_hand.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.excellent-txt {
+  width: 660px;
+  min-height: 695px;
+}
+
 /*# sourceMappingURL=style.css.map */
