@@ -387,7 +387,7 @@ h1 {
     max-width: 760px;
     margin: 25px 0 40px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -411,21 +411,21 @@ aside {
   background-color: #221b19;
   padding: 59px;
   & span:nth-child(1) {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 28px;
     line-height: 1.2;
     font-weight: 400;
     color: #c7b299;
   }
   & span:nth-child(2) {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 28px;
     line-height: 1.2;
     font-weight: 400;
     color: #ffffff;
   }
   & p {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
     line-height: 1.2;
     font-weight: 300;
@@ -451,7 +451,7 @@ aside {
     max-width: 760px;
     margin: 25px 0 40px;
     text-align: center;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     line-height: 28px;
     font-weight: 300;
@@ -520,14 +520,14 @@ aside {
   & span:nth-child(1) {
     display: block;
     margin-bottom: 14px;
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 500;
     color: #c7b299;
   }
   & span:nth-child(2) {
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
@@ -657,7 +657,7 @@ aside {
 }
 
 .video-txt-time {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
