@@ -801,9 +801,6 @@ aside p {
   border-left: 10px solid #c7b299;
   border-bottom: 5px solid transparent;
 }
-.recent-item-txt a:hover a:after {
-  color: white;
-}
 
 .calendar {
   position: absolute;
