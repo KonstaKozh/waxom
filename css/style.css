@@ -651,11 +651,11 @@ aside p {
 }
 
 .excellent-txt {
-  max-width: 660px;
-  padding: 195px 0 0 880px;
+  max-width: 670px;
+  padding: 195px 0 0 45%;
 }
 .excellent-txt p {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 16px;
   line-height: 28px;
   font-weight: 300;
@@ -663,7 +663,22 @@ aside p {
 }
 .excellent-txt ul {
   list-style-type: none;
-  list-style-image: url("../img/mark.png");
+}
+.excellent-txt ul li {
+  position: relative;
+  padding-left: 50px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+.excellent-txt ul li:before {
+  position: absolute;
+  content: url("../img/mark.png");
+  top: 5px;
+  left: 5px;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
