@@ -321,7 +321,7 @@ h1 {
     margin: 0 20px;
   }
 
-  & h2 {
+  & h3 {
     display: block;
     margin: 0 auto;
     padding-top: 30px;
@@ -356,7 +356,7 @@ h1 {
     fill: #c7b299;
   }
 
-  &:hover h2 {
+  &:hover h3 {
     color: #c7b299;
   }
 
@@ -367,7 +367,7 @@ h1 {
     fill: #555555;
   }
 
-  &:active h2 {
+  &:active h3 {
     color: #555555;
   }
 
@@ -783,7 +783,7 @@ aside {
   padding: 30px;
   border: 1.0px solid #f8f8f8;
   box-sizing: border-box;
-  & h2 {
+  & h3 {
     margin: 0;
     Text: Lorem ipsum dolor sit amet;
     font-family: Raleway;
@@ -863,7 +863,7 @@ aside {
 .recent-item:hover .recent-item-txt {
   background-color: #362f2d;
   border: 1.0px solid #362f2d;
-  & h2 {
+  & h3 {
     color: #c7b299;
   }
   & p {
@@ -897,4 +897,71 @@ aside {
   & button:active {
     fill: #c7b299;
   }
+}
+
+.partners {
+  width: 100%;
+  padding: 140px 0;
+  background-color: rgba(17,17,17,0.7);
+  background-image: url("../img/bg_partners.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & img {
+    margin: 0 75px;
+  }
+}
+
+.inform {
+  background-color: #191919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & h2 {
+    font-family: Raleway;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+  }
+}
+
+.organization {
+  width: 260px;
+  & p {
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #555555;
+  }
+  & .ref {
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #d1d1d1;
+    position: relative;
+  }
+  & .ref:hover {
+    color: white;
+  }
+  & .ref:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 5px;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #c7b299;
+    border-bottom: 5px solid transparent;
+  }
+}
+
+.posts {
+  width: 260px;
+}
+
+.post-item {
+
 }
