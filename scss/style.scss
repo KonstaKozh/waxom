@@ -910,14 +910,26 @@ aside {
   & img {
     margin: 0 75px;
   }
+  & img:hover {
+    filter: brightness(0.5);
+  }
+}
+
+footer {
+  background-color: #191919;
+  display: flex;
+  //justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .inform {
-  background-color: #191919;
+  width: 1170px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  padding: 80px 0 80px;
+  padding: 80px 0 60px;
   & h2 {
     margin: 0;
     font-family: Raleway;
@@ -1058,5 +1070,52 @@ aside {
   flex-wrap: wrap;
   & img {
     margin-top: 10px;
+  }
+  & img:hover {
+    //backdrop-filter: blur(2px);
+    filter: brightness(0.5);
+  }
+}
+
+.copyright {
+  width: 100%;
+  background-color: #111111;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright-wrap {
+  width: 1170px;
+  & a {
+    padding: 0 10px;
+    border-left: 1px solid #252525;
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+  }
+  & a:first-child {
+    padding-left: 0;
+    border: none;
+  }
+  & a:nth-child(5) {
+
+    float: right;
+  }
+  & a:last-child {
+    border: none;
+    float: right;
+  }
+  & span {
+    color: #959595;
+  }
+  & a:hover {
+    color: #c7b299;
+  }
+  & a:hover span {
+    color: #c7b299;
   }
 }
