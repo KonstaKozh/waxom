@@ -917,6 +917,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 110px 0 80px;
   & h2 {
     font-family: Raleway;
     font-size: 24px;
@@ -929,6 +930,7 @@ aside {
 .organization {
   width: 260px;
   & p {
+    padding: 10px 0 20px;
     font-family: Montserrat;
     font-size: 14px;
     line-height: 24px;
@@ -960,8 +962,50 @@ aside {
 
 .posts {
   width: 260px;
+  & a {
+    border-bottom: 2px solid #fff;
+    text-decoration: none;
+  }
+  & a:last-child {
+    border: none;
+  }
 }
 
 .post-item {
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+  & time {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #363636;
+  }
+  & p {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+  }
+}
 
+.post-item:hover {
+  & time {
+    color: #ffffff;
+  }
+  & p {
+    color: #c7b299;
+  }
+}
+
+.post-item:active {
+  & time {
+    color: #ffffff;
+  }
+  & p {
+    color: #c7b299;
+  }
 }

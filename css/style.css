@@ -893,6 +893,7 @@ aside p {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 110px 0 80px;
 }
 .inform h2 {
   font-family: Raleway;
@@ -906,6 +907,7 @@ aside p {
   width: 260px;
 }
 .organization p {
+  padding: 10px 0 20px;
   font-family: Montserrat;
   font-size: 14px;
   line-height: 24px;
@@ -936,6 +938,48 @@ aside p {
 
 .posts {
   width: 260px;
+}
+.posts a {
+  border-bottom: 2px solid #fff;
+  text-decoration: none;
+}
+.posts a:last-child {
+  border: none;
+}
+
+.post-item {
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+}
+.post-item time {
+  font-family: Montserrat;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #363636;
+}
+.post-item p {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #555555;
+}
+
+.post-item:hover time {
+  color: #ffffff;
+}
+.post-item:hover p {
+  color: #c7b299;
+}
+
+.post-item:active time {
+  color: #ffffff;
+}
+.post-item:active p {
+  color: #c7b299;
 }
 
 /*# sourceMappingURL=style.css.map */
