@@ -916,9 +916,10 @@ aside {
   background-color: #191919;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 110px 0 80px;
+  align-items: flex-start;
+  padding: 80px 0 80px;
   & h2 {
+    margin: 0;
     font-family: Raleway;
     font-size: 24px;
     line-height: 1.2;
@@ -963,7 +964,7 @@ aside {
 .posts {
   width: 260px;
   & a {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #252525;
     text-decoration: none;
   }
   & a:last-child {
@@ -983,7 +984,8 @@ aside {
     color: #363636;
   }
   & p {
-    margin: 0;
+    margin: 10px 0 0 0;
+    hyphens: auto;
     font-family: Montserrat;
     font-size: 14px;
     line-height: 20px;
@@ -1007,5 +1009,54 @@ aside {
   }
   & p {
     color: #c7b299;
+  }
+}
+
+.twitter {
+  width: 260px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 300;
+  & a {
+    text-decoration: none;
+    color: #00bff3;
+  }
+  & a:hover {
+    color: #959595;
+  }
+  & p {
+    margin: 0 0 10px 0;
+    color: #555555;
+  }
+  & time {
+    font-family: Montserrat;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #363636;
+  }
+}
+
+.twitter-item {
+  border-bottom: 2px solid #252525;
+  padding: 20px 0;
+  &:last-child {
+    border: none;
+  }
+}
+
+.widget {
+  width: 270px;
+}
+
+.widget-wrap {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  & img {
+    margin-top: 10px;
   }
 }
