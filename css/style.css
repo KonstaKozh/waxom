@@ -801,6 +801,9 @@ aside p {
   border-left: 10px solid #c7b299;
   border-bottom: 5px solid transparent;
 }
+.recent-item-txt a:hover::after {
+  border-left: 10px solid #ffffff;
+}
 
 .calendar {
   position: absolute;
@@ -935,9 +938,6 @@ footer {
   color: #d1d1d1;
   position: relative;
 }
-.organization .ref:hover {
-  color: white;
-}
 .organization .ref:after {
   content: "";
   position: absolute;
@@ -946,6 +946,12 @@ footer {
   border-top: 5px solid transparent;
   border-left: 10px solid #c7b299;
   border-bottom: 5px solid transparent;
+}
+.organization .ref:hover {
+  color: white;
+}
+.organization .ref:hover::after {
+  border-left: 10px solid #ffffff;
 }
 
 .posts {

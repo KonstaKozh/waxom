@@ -822,6 +822,9 @@ aside {
     border-left: 10px solid #c7b299;
     border-bottom: 5px solid transparent;
   }
+  & a:hover::after {
+    border-left: 10px solid #ffffff;
+  }
 }
 
 .calendar {
@@ -959,9 +962,6 @@ footer {
     color: #d1d1d1;
     position: relative;
   }
-  & .ref:hover {
-    color: white;
-  }
   & .ref:after {
     content: "";
     position: absolute;
@@ -970,6 +970,12 @@ footer {
     border-top: 5px solid transparent;
     border-left: 10px solid #c7b299;
     border-bottom: 5px solid transparent;
+  }
+  & .ref:hover {
+    color: white;
+  }
+  & .ref:hover::after {
+    border-left: 10px solid #ffffff;
   }
 }
 
