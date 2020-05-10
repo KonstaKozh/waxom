@@ -35,11 +35,12 @@ h1 {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .logo {
-  width: 181px;
+  //width: 181px;
   position: relative;
   display: flex;
   align-items: center;
@@ -72,18 +73,18 @@ h1 {
   padding: 0;
 }
 
-.header-nav ul {
+.menu {
   display: flex;
   justify-content: space-between;
   padding: 0;
 }
 
-.header-nav li {
+.menu li {
   list-style: none;
   padding-right: 30px;
 }
 
-.header-nav a {
+.menu li a {
   font-family: Montserrat, serif;
   font-size: 14px;
   line-height: 1.2;
@@ -98,6 +99,11 @@ h1 {
   &:active {
     color: #fff;
   }
+}
+
+label,
+#menu {
+  display: none;
 }
 
 .header-service {
@@ -300,11 +306,12 @@ h1 {
 }
 
 .services {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 80px 0 80px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .service-item {
@@ -460,7 +467,9 @@ aside {
 }
 
 .filter {
-  min-width: 610px;
+  max-width: 610px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project-button {
@@ -605,7 +614,7 @@ aside {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 705%;
+  height: 705px;
   position: relative;
   overflow: hidden;
   background-color: #cccccc;
@@ -614,6 +623,9 @@ aside {
 .video-item {
   width: 100%;
   height: 100%;
+  background-image: url(../img/video-poster.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .video-txt {
@@ -710,6 +722,7 @@ aside {
   height: 300px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #f4f5f8;
   background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
 }
@@ -752,6 +765,7 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   & p {
     max-width: 760px;
     margin: 30px 0 40px;
@@ -768,6 +782,7 @@ aside {
   max-width: 1170px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .recent-item {
@@ -911,6 +926,7 @@ aside {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   & img {
     margin: 0 75px;
   }
@@ -929,10 +945,11 @@ footer {
 }
 
 .inform {
-  width: 1170px;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
   padding: 80px 0 60px;
   & h2 {
     margin: 0;
@@ -1127,6 +1144,161 @@ footer {
   }
 }
 
-@media (max-width: 480px) {
-  
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    margin: 0;
+  }
+  .header {
+    position: relative;
+    background-color: #555555;
+    background-image: url(../img/bg_slider.png);
+    background-size: cover;
+    padding: 0;
+    left: 0;
+    margin: 0;
+  }
+  .header-wrap {
+    display: inline;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .logo {
+    flex-grow: 1;
+    float: left;
+    padding: 20px 0 0 20px;
+  }
+
+  label {
+    display: block;
+    margin: 5px 20px 0 0;
+    float: right;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background-image:  url('https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #fff;
+  }
+
+  .menu {
+    //position: absolute;
+    //top: 100%;
+    //left: 0;
+    height: 0;
+    visibility: hidden;
+    margin: 0 auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  .menu li {
+    text-align: center;
+    background-color: transparent;
+    padding: 15px 0;
+    border-bottom: 1px solid white;
+  }
+  .menu li:first-child {
+    border-top: 1px solid white;
+  }
+
+  .menu li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+  }
+
+  .menu li:hover {
+    background-color: #c7b299;
+  }
+
+  .menu li a:hover {
+    color: white;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    height: auto;
+    padding-top: 15px;
+    visibility: visible;
+  }
+
+  .header-service {
+    display: none;
+  }
+  .slider {
+    display: none;
+  }
+
+  .services {
+    padding: 40px 15px;
+  }
+
+  .service-item {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+
+  .service-item h3 {
+    font-size: 18px;
+  }
+
+  .ideas,
+    aside {
+    display: none;
+  }
+
+  .project {
+    padding: 0;
+    & .filter {
+      justify-content: center;
+    }
+    & p {
+      padding: 0 15px;
+    }
+    & .project-wrap {
+      justify-content: center;
+    }
+  }
+
+  .video {
+    margin-top: 40px;
+  }
+
+  .excellent {
+    background-position: 5% bottom;
+    background-size: 50%;
+    height: 40em;
+    & .excellent-txt {
+      padding: 40px 15px;
+    }
+    & .excellent-txt ul li {
+      padding-left: 200px;
+      font-size: 12px;
+    }
+    & .excellent-txt ul li:before {
+      left: 170px;
+    }
+  }
+
+  .counters {
+    display: none
+  }
+
+  .partners {
+    padding: 40px 0;
+  }
+  .partners img {
+    padding: 15px;
+    width: 190px;
+    margin: 0;
+  }
+
+  .inform {
+    justify-content: center;
+    padding: 40px 0;
+  }
+
 }
