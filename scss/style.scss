@@ -75,7 +75,8 @@ h1 {
 
 .menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -405,7 +406,8 @@ label,
 
 .ideas-img {
   height: 480px;
-  width: 1230px;
+  max-width: 1230px;
+  width: 100%;
   background-color: transparent;
   background-image: url("../img/browser_center.png"),
                     url("../img/browser_left.png"),
@@ -1146,7 +1148,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 460px) and (max-width: 480px) {
   .container {
     max-width: 100%;
     margin: 0;
@@ -1187,9 +1189,6 @@ footer {
   }
 
   .menu {
-    //position: absolute;
-    //top: 100%;
-    //left: 0;
     height: 0;
     visibility: hidden;
     margin: 0 auto;
