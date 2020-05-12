@@ -1116,7 +1116,7 @@ footer {
   color: #c7b299;
 }
 
-@media only screen and (min-width: 460px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   .container {
     max-width: 100%;
     margin: 0;
@@ -1151,11 +1151,17 @@ footer {
     width: 50px;
     height: 50px;
     border: 1px solid black;
-    background-image: url("https://cdn3.iconfinder.com/data/icons/mobile-friendly-ui/100/menu-128.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-color: #fff;
+    position: relative;
+  }
+
+  .burger {
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    right: 0px;
+    height: 4px;
+    background: white;
   }
 
   .menu {
