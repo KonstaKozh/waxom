@@ -1148,9 +1148,8 @@ footer {
     display: block;
     margin: 5px 20px 0 0;
     float: right;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+    width: 40px;
+    height: 40px;
     position: relative;
   }
 
@@ -1161,7 +1160,39 @@ footer {
     left: 0px;
     right: 0px;
     height: 4px;
-    background: white;
+    background-color: white;
+  }
+  .burger:after {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -12px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    content: "";
+  }
+  .burger:before {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 12px;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    content: "";
+  }
+
+  label:hover .burger {
+    background-color: #c7b299;
+  }
+
+  label:hover .burger:after {
+    background-color: #c7b299;
+  }
+
+  label:hover .burger:before {
+    background-color: #c7b299;
   }
 
   .menu {
@@ -1202,6 +1233,11 @@ footer {
     height: auto;
     padding-top: 15px;
     visibility: visible;
+  }
+
+  input:checked .burger {
+    transform: rotate(45deg) translate(0px, 0px);
+    background-color: #c7b299;
   }
 
   .header-service {
