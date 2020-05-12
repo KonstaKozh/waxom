@@ -1373,9 +1373,9 @@ aside {
     border-left: 1px solid #252525;
   }
 }
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 460px) {
   .container {
-    max-width: 360px;
+    width: 100%;
   }
 
   .services {
