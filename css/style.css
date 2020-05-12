@@ -915,14 +915,11 @@ aside p {
 
 footer {
   background-color: #191919;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
 }
 
 .inform {
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1067,7 +1064,7 @@ footer {
   flex-wrap: wrap;
 }
 .widget-wrap img {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 .widget-wrap img:hover {
   filter: brightness(0.5);

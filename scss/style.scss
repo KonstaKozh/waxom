@@ -939,15 +939,16 @@ aside {
 
 footer {
   background-color: #191919;
-  display: flex;
-  //justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
+  //display: flex;
+  ////justify-content: center;
+  //flex-direction: column;
+  //align-items: center;
+  //flex-wrap: wrap;
 }
 
 .inform {
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1095,7 +1096,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   & img {
-    margin-top: 10px;
+    margin-top: 6px;
   }
   & img:hover {
     //backdrop-filter: blur(2px);
