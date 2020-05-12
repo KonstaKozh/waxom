@@ -633,7 +633,7 @@ aside {
 }
 
 .video-txt {
-  width: 570px;
+  max-width: 570px;
   padding: 10px;
   position: absolute;
   display: flex;
@@ -1153,29 +1153,39 @@ footer {
     max-width: 100%;
     margin: 0;
   }
+
   .header {
     position: relative;
     background-color: #555555;
-    background-image: url(../img/bg_slider.png);
-    background-size: cover;
+    //background-image: url(../img/bg_slider.png);
+    //background-size: cover;
     padding: 0;
     left: 0;
     margin: 0;
   }
+
   .header-wrap {
-    display: inline;
-    padding: 20px;
+    display: block;
+    padding: 0;
     margin: 0;
+    width: 100%;
+    background-image: url(../img/bg_slider.png);
+    background-size: cover;
   }
 
   .logo {
+    display: inline;
     flex-grow: 1;
     float: left;
-    padding: 20px 0 0 20px;
+    padding: 15px 0 15px 15px;
+  }
+
+  .header-nav {
+    padding-top: 20px;
   }
 
   label {
-    display: block;
+    display: inline-block;
     margin: 5px 20px 0 0;
     float: right;
     width: 40px;
@@ -1191,7 +1201,7 @@ footer {
     right: 0px;
     height: 4px;
     background-color: white;
-    &:after {
+    &:before {
       position: absolute;
       display: block;
       left: 0;
@@ -1201,7 +1211,7 @@ footer {
       background-color: #fff;
       content: "";
     }
-    &:before {
+    &:after {
       position: absolute;
       display: block;
       left: 0;
@@ -1257,13 +1267,21 @@ footer {
 
   input[type="checkbox"]:checked ~ .menu {
     height: auto;
-    padding-top: 15px;
     visibility: visible;
   }
 
-  input:checked .burger {
-    transform: rotate(45deg) translate(0px, 0px);
-    background-color: #c7b299;
+  input[type="checkbox"]:checked ~ label .burger {
+    background: none;
+  }
+  input[type="checkbox"]:checked ~ label .burger:before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.5s
+  }
+  input[type="checkbox"]:checked ~ label .burger:after {
+    top: 0;
+    transform: rotate(-45deg);
+    transition: transform 0.5s
   }
 
   .header-service {
@@ -1380,4 +1398,76 @@ footer {
       border-left: 1px solid #252525;
     }
   }
+}
+
+@media only screen and (max-width: 360px) {
+  .container {
+    max-width: 360px;
+  }
+
+  .services {
+    justify-content: center;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+  .project-item img {
+    width: 100%;
+  }
+
+  .video {
+    height: 380px;
+  }
+
+  .video-txt {
+    & svg {
+      width: 60px;
+      height: 57px;
+    }
+    & h1 {
+      text-align: center;
+    }
+    & p {
+      margin: 20px 0;
+    }
+  }
+  .video-txt-button {
+    width: 80px;
+    height: 80px;
+    margin: 20px 0;
+  }
+
+  .excellent {
+    background-size: 40%;
+    height: 37em;
+    & h1 {
+       text-align: center;
+    }
+    & p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    & .excellent-txt {
+        padding: 40px 15px;
+    }
+    & .excellent-txt ul li {
+        padding-left: 130px;
+        line-height: 20px;
+    }
+    & .excellent-txt ul li:before {
+        left: 95px;
+    }
+  }
+
+  .recent {
+    padding: 40px 0;
+  }
+  .recent-item {
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+
 }
